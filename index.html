@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Walang laman</title>
+	<style type="text/css">
+		#love-popup {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #fff;
+			padding: 20px;
+			border: 2px solid #f00;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			z-index: 9999;
+		}
+	</style>
+</head>
+<body>
+	<button onclick="showLovePopup()">Click this</button>
+	<div id="love-popup">
+		<p>I love you</p>
+		<button onclick="hideLovePopup()">Close</button>
+	</div>
+	<script type="text/javascript">
+		function showLovePopup() {
+			document.getElementById("love-popup").style.display = "block";
+		}
+		function hideLovePopup() {
+			document.getElementById("love-popup").style.display = "none";
+		}
+	</script>
+</body>
+</html>
