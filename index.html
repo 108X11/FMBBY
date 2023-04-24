@@ -16,10 +16,19 @@
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 			z-index: 9999;
 		}
+    .container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width: 200px;
+			height: 200px;
+			background-color: #f00;
+		}
 	</style>
 </head>
 <body>
-	<button onclick="showLovePopup()">Click this</button>
+	<button class="container" onclick="showLovePopup()">Click this</button>
 	<div id="love-popup">
 		<p>I love you</p>
 		<button onclick="hideLovePopup()">Close</button>
